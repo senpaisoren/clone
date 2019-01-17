@@ -7,6 +7,8 @@ ruby '2.3.3'
 gem 'rails', '~> 5.2.2'
 # Add user authenication with Devise gem
 gem 'devise', '~> 4.4', '>=4.4.1'
+# Add SASS bootstrap
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use Puma as the app server
