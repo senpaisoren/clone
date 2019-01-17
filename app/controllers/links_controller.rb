@@ -22,6 +22,22 @@ class LinksController < ApplicationController
   def edit
   end
 
+  #UPVOTES
+    def upvote
+    @link = Link.find(params[:id])
+    @link.upvote_by current_user
+    redirect_back fallback_location: root_path
+  end
+  
+  #DOWNVOTES
+  def downvote
+    @link = Link.find(params[:id])
+    @link.downvote_by current_user
+    redirect_back fallback_location: root_path
+  end
+
+
+
   # POST /links
   # POST /links.json
   def create

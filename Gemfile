@@ -9,6 +9,8 @@ gem 'rails', '~> 5.2.2'
 gem 'devise', '~> 4.4', '>=4.4.1'
 # Add SASS bootstrap
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
+#SS
+gem 'acts_as_votable', '~> 0.11.1'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use Puma as the app server
