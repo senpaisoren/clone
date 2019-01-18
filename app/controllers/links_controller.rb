@@ -23,7 +23,7 @@ class LinksController < ApplicationController
   end
 
   #UPVOTES
-    def upvote
+  def upvote
     @link = Link.find(params[:id])
     @link.upvote_by current_user
     redirect_back fallback_location: root_path
@@ -42,8 +42,7 @@ class LinksController < ApplicationController
   # POST /links.json
   def create
     @link = current_user.links.build(link_params)
-
-    respond_to do |format|
+respond_to do |format|
       if @link.save
         format.html { redirect_to @link, notice: 'Link was successfully created.' }
         format.json { render :show, status: :created, location: @link }
